@@ -1,0 +1,12 @@
+[user]
+	name = Matt Goldman
+	email = robotmlg@gmail.com
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[push]
+	default = simple
+[color]
+	ui = true
