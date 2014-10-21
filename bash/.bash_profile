@@ -9,7 +9,7 @@ alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias engage="say -v bruce Engage;play -n -c1 synth whitenoise band -n 100 20 band -n 50 20 gain +25 fade h 1 864000 1"
 alias scheme='plt-r5rs'
 
-export PATH=/Users/mgoldman/Applications:/usr/local/bin:$PATH
+export PATH=.:/Users/mgoldman/Applications:/usr/local/bin:$PATH
 
 #todo.txt stuff
 export TODOTXT_AUTO_ARCHIVE=1
@@ -30,11 +30,11 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin"
 export PATH
 
 # Ruby stuff
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 # Racket
-export PATH=/Applications/Racket\ v6.0/bin:$PATH
+export PATH=$PATH:/Applications/Racket\ v6.0/bin
