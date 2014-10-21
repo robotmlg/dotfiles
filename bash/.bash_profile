@@ -1,6 +1,6 @@
 export LESS=-erX
 export TERM=xterm-color
-export PS1="\[\e[31;1m\]\h:\[\e[33;1m\]\W \[\e[34;1m\]\u\$ \[\e[0m\]"
+export PS1=$'\e[31;1m\h:\e[33;1m\W \e[34;1m\u\$ \e[0m'
 alias ls='ls -aG'
 alias ll='ls -halG'
 alias please='sudo'
