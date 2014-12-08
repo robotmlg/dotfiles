@@ -1,3 +1,5 @@
+if [ -f ~/.bashrc ]; then . ~/.bashrc; fi 
+
 export LESS=-erX
 export TERM=xterm-color
 export PS1=$'\e[31;1m\h:\e[33;1m\W \e[34;1m\u\$ \e[0m'

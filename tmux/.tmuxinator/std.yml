@@ -23,5 +23,5 @@ windows:
       layout: even-horizontal
       panes:
         - vim
-        - .
+        - clear
   - scratch:
