@@ -1,11 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/mgoldman/Documents/School/12-13/CS111/InClass/Capitalize'
-let g:netrw_dirhist_2='/Users/mgoldman/.dropbox'
-let g:netrw_dirhist_3='/Users/mgoldman/Documents/School/12-13/CS111/InClass/Factorial'
-let g:netrw_dirhist_4='/Users/mgoldman/Documents/School/12-13/CS111/InClass/Hanoi'
-let g:netrw_dirhist_5='/Users/mgoldman/.ssh'
-let g:netrw_dirhist_6='/Users/mgoldman/Documents/School/Rutgers/198_112_S13/src'
-let g:netrw_dirhist_7='/Users/mgoldman/Documents/School/Rutgers/640_292_S13_Calc4'
-let g:netrw_dirhist_8='/Users/mgoldman/Documents/School/Rutgers/198_211_F13_CompArch/freqaddr'
-let g:netrw_dirhist_9='/Users/mgoldman/Documents/School/Rutgers/_Courses'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/mgoldman/Sites/mattgoldman.us/.git'
+let g:netrw_dirhist_2='/Users/mgoldman/Sites/mattgoldman.us/projects/rocky4'
