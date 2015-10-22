@@ -64,3 +64,5 @@ let g:syntastic_enable_balloons = 1
 let g:syntastic_auto_loc_list=1
 
 let java_allow_cpp_keywords=1
+
+autocmd filetype crontab setlocal nobackup nowritebackup
