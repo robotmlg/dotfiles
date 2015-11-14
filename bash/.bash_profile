@@ -2,7 +2,6 @@ if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 
 export LESS=-erX
 export TERM=xterm-color
-export PS1=$'\[\e[34;1m\]\u\[\e[32;1m\]@\[\e[31;1m\]\h:\[\e[33;1m\]\W \[\e[32;1m\]\$ \[\e[0m\]'
 alias ls='ls -aG'
 alias ll='ls -halG'
 alias please='sudo'
@@ -10,6 +9,13 @@ alias javac='javac -Xlint'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias engage="say -v bruce Engage;play -n -c1 synth whitenoise band -n 100 20 band -n 50 20 gain +25 fade h 1 864000 1"
 alias scheme='plt-r5rs'
+
+# git branch in prompt
+
+parse_git_branch(){
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1=$'\[\e[34;1m\]\u\[\e[32;1m\]@\[\e[31;1m\]\h:\[\e[33;1m\]\W\[\e[0m\]$(parse_git_branch)\[\e[32;1m\]\$ \[\e[0m\]'
 
 export PATH=.:/Users/mgoldman/Applications:/usr/local/bin:$PATH
 
