@@ -20,6 +20,7 @@ export PS1=$'\[\e[34;1m\]\u\[\e[32;1m\]@\[\e[31;1m\]\h:\[\e[33;1m\]\W\[\e[0m\]$(
 export PATH=.:/Users/mgoldman/Applications:/usr/local/bin:$PATH
 
 #todo.txt stuff
+alias todo='todo.sh'
 export TODOTXT_AUTO_ARCHIVE=1
 export TODOTXT_CFG_FILE=/Users/mgoldman/.todo/todo.cfg
 export TODOTXT_PRESERVE_LINE_NUMBERS=0
