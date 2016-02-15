@@ -9,7 +9,8 @@ alias javac='javac -Xlint'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias engage="say -v bruce Engage;play -n -c1 synth whitenoise band -n 100 20 band -n 50 20 gain +25 fade h 1 864000 1"
 alias scheme='plt-r5rs'
-alias tmx='tmux new-session \; split-window -h -p 66 \; split-window -h -p 50'
+alias tmx2='tmux new-session \; split-window -h -p 50'
+alias tmx3='tmux new-session \; split-window -h -p 66 \; split-window -h -p 50'
 
 # git branch in prompt
 
