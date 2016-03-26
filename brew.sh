@@ -42,6 +42,7 @@ brew tap caskroom/cask
 
 # apps
 brew cask install dropbox
+brew cask install karabiner
 brew cask install flux
 brew cask install slimbatterymonitor
 brew cask install bettertouchtool
