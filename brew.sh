@@ -31,7 +31,9 @@ brew install tree
 brew install nmap
 
 # languages
+brew install python
 brew install python3
+pip install virtualenvwrapper
 
 # fun
 brew install sl
@@ -41,14 +43,16 @@ brew install gti
 brew tap caskroom/cask
 
 # apps
-brew cask install dropbox
-brew cask install karabiner
-brew cask install flux
-brew cask install slimbatterymonitor
-brew cask install bettertouchtool
-brew cask install twitterrific
-brew cask install iterm2
-brew cask install java
-brew cask install firefox
+brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" karabiner
+brew cask install --appdir="/Applications" flux
+brew cask install --appdir="/Applications" slimbatterymonitor
+brew cask install --appdir="/Applications" bettertouchtool
+brew cask install --appdir="/Applications" twitterrific
+brew cask install --appdir="/Applications" iterm2
+brew cask install --appdir="/Applications" java
+brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" libreoffice
+brew cask install --appdir="/Applications" vlc
 
 brew cleanup
