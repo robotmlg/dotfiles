@@ -2,7 +2,6 @@
 
 # Install tools with homebrew
 
-
 # check for homebrew and install if you need to
 if test ! $(which brew); then
   echo "Installing brew..."
@@ -38,6 +37,7 @@ pip install virtualenvwrapper
 # fun
 brew install sl
 brew install gti
+brew install fortune
 
 # set up casks
 brew tap caskroom/cask
