@@ -43,6 +43,7 @@ brew install fortune
 brew tap caskroom/cask
 
 # apps
+brew cask install apptrap # installs to prefpane directory
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" karabiner
 brew cask install --appdir="/Applications" flux
