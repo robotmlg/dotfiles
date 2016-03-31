@@ -28,6 +28,7 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 brew install stow
 brew install tree
 brew install nmap
+brew install ssh-copy-id
 
 # languages
 brew install python
