@@ -56,5 +56,6 @@ brew cask install --appdir="/Applications" java
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" libreoffice
 brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" the-unarchiver
 
 brew cleanup
