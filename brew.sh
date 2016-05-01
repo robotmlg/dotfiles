@@ -21,6 +21,7 @@ chsh -s /usr/local/bin/bash # change user shell to new one
 brew install git
 brew install vim --override-system-vi
 brew install tmux
+brew install reattach-to-user-namespace
 
 # utils
 brew install coreutils
@@ -58,5 +59,6 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" libreoffice
 brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" the-unarchiver
+brew install --appdir="/Applications" Caskroom/versions/google-chrome-canary
 
 brew cleanup
