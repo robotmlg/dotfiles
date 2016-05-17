@@ -1,4 +1,5 @@
 set number
+set relativenumber
 syntax on
 
 execute pathogen#infect()
@@ -48,8 +49,8 @@ noremap <C-L> <C-W>l
 noremap <C-J> <C-W>j
 noremap <C-K> <C-W>k
 
-nnoremap j gj
-nnoremap k gk
+nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap ; :
 nnoremap : ;
 
