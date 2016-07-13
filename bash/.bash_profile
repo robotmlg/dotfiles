@@ -30,6 +30,8 @@ alias lt="ls -ltr"         # sort by date, recent last
 alias lm="ls -al |more"    # pipe through 'more'
 alias lr="ls -lR"          # recursive ls
 
+alias fn="find . -name $*" # find by name
+
 alias please='sudo'
 alias javac='javac -Xlint'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
