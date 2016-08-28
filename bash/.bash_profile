@@ -41,3 +41,5 @@ export PATH=$PATH:/Applications/Racket\ v6.0/bin
 # Go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
