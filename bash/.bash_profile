@@ -46,6 +46,9 @@ alias tmx3='tmux new-session \; split-window -h -p 66 \; split-window -h -p 50'
 alias tmxd='tmux new-session \; split-window -h -l 85 -b \; select-pane -R \; split-window -h -l 85'
 alias newdev='tmux new-window \; split-window -h -l 85 -b \; select-pane -R \; split-window -h -l 85'
 alias devsp='tmux split-window -h -l 85 -b \; select-pane -R \; split-window -h -l 85'
+alias tmxt='tmux new-session \; split-window -h -l 95 -b \; select-pane -R \; split-window -v -p 50'
+alias newt='tmux new-window \; split-window -h -l 95 -b \; select-pane -R \; split-window -v -p 50'
+alias tallsp='tmux split-window -h -l 95 -b \; select-pane -R \; split-window -v -p 50'
 
 # git aliases
 #aa = add -A
@@ -164,5 +167,6 @@ export TODOTXT_PRESERVE_LINE_NUMBERS=0
 bind '"[A":history-search-backward'
 bind '"[B":history-search-forward'
 
+ssh-add -A
 
-
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
