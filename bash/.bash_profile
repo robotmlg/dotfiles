@@ -128,6 +128,7 @@ fi)'$COLOR_OFF'\n'$MONEY_PROMPT
 ################
 
 export PATH=.:/Users/mgoldman/Applications:$PATH
+export PATH=$PATH:/Library/TeX/texbin
 
 ################
 # LANGUAGES
