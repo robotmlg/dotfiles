@@ -27,7 +27,7 @@ alias lx="ls -lXB"         # sort by extension
 alias lk="ls -lSr"         # sort by size, biggest last
 alias lc="ls -ltcr"        # sort by and show change time, recent last
 alias lt="ls -ltr"         # sort by date, recent last
-alias lm="ls -al |more"    # pipe through 'more'
+alias lm="ls -al | more"    # pipe through 'more'
 alias lr="ls -lR"          # recursive ls
 
 alias fn="find . -name $*" # find by name
@@ -37,10 +37,37 @@ alias javac='javac -Xlint'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias engage="say -v bruce Engage;play -n -c1 synth whitenoise band -n 100 20 band -n 50 20 gain +25 fade h 1 864000 1"
 alias scheme='plt-r5rs'
+
+################
+# TMUX
+################
 alias tmx2='tmux new-session \; split-window -h -p 50'
 alias tmx3='tmux new-session \; split-window -h -p 66 \; split-window -h -p 50'
+alias tmxd='tmux new-session \; split-window -h -l 85 -b \; select-pane -R \; split-window -h -l 85'
+alias newdev='tmux new-window \; split-window -h -l 85 -b \; select-pane -R \; split-window -h -l 85'
+alias devsp='tmux split-window -h -l 85 -b \; select-pane -R \; split-window -h -l 85'
+alias tmxt='tmux new-session \; split-window -h -l 95 -b \; select-pane -R \; split-window -v -p 50'
+alias newt='tmux new-window \; split-window -h -l 95 -b \; select-pane -R \; split-window -v -p 50'
+alias tallsp='tmux split-window -h -l 95 -b \; select-pane -R \; split-window -v -p 50'
 
-alias vl='vim $(!!)'        # vim the file name output by the last command
+# git aliases
+#aa = add -A
+#cm = commit -m
+#co = checkout
+#cb = checkout -b
+#df = diff
+#dfc = diff --cached
+#fixup = "!f() { git add . && git commit --fixup HEAD && git rebase --interactive --autosquash HEAD~2; }; f"
+#lg = log --graph --pretty=format:'%C(yellow)%d%Creset %C(bold blue)%s%Creset %Cgreen(%cr) %Cred<%an>%Creset' --abbrev-commit --date=relative
+#lgtoday = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --since='1 Day Ago'
+#lsday = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --since='1 Day Ago'
+#pb = "!f() { git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`; }; f"
+#prm = "!f() { hub pull-request -m \"$1\n$HUB_PR_BODY_TEMPLATE\" | xargs open; }; f"
+#st = status
+#whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+#trim = "!f() { git fetch && git remote prune origin; git branch --merged | grep -v \"^\\*\\|master$\" | xargs -n 1 git branch -d; }; f"
+#bak = "!f() { git cb `echo "$(git rev-parse --abbrev-ref HEAD)-$(date +%s)"` && git pb && git co -; }; f"
+#rbm = !git fetch origin master && git rebase -i origin/master
 
 ################
 # COLORS
@@ -84,7 +111,7 @@ TIME_24H="\t "
 PATH_SHORT="\w "
 USER="\u"
 BOX="\h"
-MONEY_PROMPT=' $ '
+MONEY_PROMPT='$ '
 
 export PS1=$COLOR_WHITE_DIM$TIME_24H$COLOR_BLUE$BOX' '$COLOR_YELLOW$PATH_SHORT'$(git branch &>/dev/null;\
 if [ $? -eq 0 ]; then \
@@ -94,13 +121,14 @@ if [ $? -eq 0 ]; then \
   else \
     echo "'$COLOR_MAGENTA'"; \
   fi)$(__git_ps1 "(%s)")"; \
-fi)'$COLOR_OFF$MONEY_PROMPT
+fi)'$COLOR_OFF'\n'$MONEY_PROMPT
 
 ################
 # PATH
 ################
 
 export PATH=.:/Users/mgoldman/Applications:$PATH
+export PATH=$PATH:/Library/TeX/texbin
 
 ################
 # LANGUAGES
@@ -140,6 +168,7 @@ export TODOTXT_PRESERVE_LINE_NUMBERS=0
 bind '"[A":history-search-backward'
 bind '"[B":history-search-forward'
 
+ssh-add -A
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
