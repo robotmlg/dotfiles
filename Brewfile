@@ -32,7 +32,6 @@ cask "safari-technology-preview"
 cask "slimbatterymonitor"
 cask "the-unarchiver"
 cask "transmission"
-cask "twitterrific"
 cask "vlc"
 cask "xact"
 
