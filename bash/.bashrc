@@ -8,13 +8,10 @@ shopt -s histappend
 
 # After each command, save and reload history
 export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
-
 export EDITOR='vim'
 
 source ~/dotfiles/tmuxinator.bash
 
-export NVM_DIR="/Users/mgoldman/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 ###-begin-npm-completion-###
 #
 # npm command completion script

@@ -153,7 +153,7 @@ export PATH=$PATH:.node_modules/.vim
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Python
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 
 ################
 # MISC
@@ -169,6 +169,8 @@ bind '"[A":history-search-backward'
 bind '"[B":history-search-forward'
 
 ssh-add -A
+
+eval $(thefuck --alias) 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
