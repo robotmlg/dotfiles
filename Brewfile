@@ -1,4 +1,5 @@
 cask_args appdir: "/Applications"
+tap "teamookla/speedtest"
 
 brew "mas"
 
@@ -47,6 +48,7 @@ brew "nmap"
 brew "python"
 brew "reattach-to-user-namespace"
 brew "sl"
+brew "speedtest"
 brew "ssh-copy-id"
 brew "stow"
 brew "streamlink"
