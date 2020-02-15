@@ -159,6 +159,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # MISC
 ################
 
+export HOMEBREW_NO_ANALYTICS=1
+
 #todo.txt stuff
 alias todo='todo.sh'
 export TODOTXT_AUTO_ARCHIVE=1
