@@ -7,7 +7,6 @@ mas "amphetamine", id:937984704
 mas "bookmarker for pinboard", id:1451400394
 mas "dark-mode-for-safari", id:1397180934
 mas "drafts", id:1435957248
-mas "ipulse", id:1028916583
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "pcalc", id:403504866
