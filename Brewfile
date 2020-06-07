@@ -46,6 +46,7 @@ ALL_FFMPEG_OPTIONS = `brew options ffmpeg | grep -vE '\s' | grep -- '--with-'`.g
 brew "ffmpeg", args: ALL_FFMPEG_OPTIONS
 brew "fortune"
 brew "git"
+brew "github/gh/gh"
 brew "gti"
 brew "nmap"
 brew "python"
