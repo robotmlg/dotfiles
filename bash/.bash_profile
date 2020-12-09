@@ -109,7 +109,6 @@ export GIT_PS1_SHOWUPSTREAM="auto"
 TIME_12H="\T "
 TIME_24H="\t "
 PATH_SHORT="\w "
-USER="\u"
 BOX="\h"
 MONEY_PROMPT='$ '
 
