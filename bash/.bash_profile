@@ -32,6 +32,8 @@ alias lr="ls -lR"          # recursive ls
 
 alias fn="find . -name $*" # find by name
 
+alias boop="ping -c 1"
+
 alias please='sudo'
 alias javac='javac -Xlint'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
