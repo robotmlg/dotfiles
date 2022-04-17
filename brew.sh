@@ -5,12 +5,8 @@
 # check for homebrew and install if you need to
 if test ! $(which brew); then
   echo "Installing brew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 echo "installing Brewfile"
 brew bundle install
-
-echo "Adding new bash to allowed shells"
-sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
-chsh -s /usr/local/bin/bash # change user shell to new one
