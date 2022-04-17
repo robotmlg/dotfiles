@@ -41,6 +41,7 @@ cask "the-unarchiver"
 
 # personal
 cask "netnewswire"
+cast "twitterific"
 
 # video
 cask "handbrake"
