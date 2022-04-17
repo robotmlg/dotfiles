@@ -1,6 +1,5 @@
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi 
-if [ -f ~/.mark43_keys ]; then . ~/.mark43_keys; fi 
-if [ -f ~/.mark43_profile ]; then . ~/.mark43_profile; fi 
+if [ -f ~/.cb_profile ]; then . ~/.cb_profile; fi 
 
 export LESS=-erX
 export TERM=xterm-color
@@ -31,8 +30,6 @@ alias lm="ls -al | more"    # pipe through 'more'
 alias lr="ls -lR"          # recursive ls
 
 alias fn="find . -name $*" # find by name
-
-alias boop="ping -c 1"
 
 alias please='sudo'
 alias javac='javac -Xlint'
@@ -92,8 +89,8 @@ COLOR_WHITE_DIM="\[\033[0;37m\]"
 ################
 
 # pull in __git_ps1
-source /usr/local/opt/git/etc/bash_completion.d/git-completion.bash
-source /usr/local/opt/git/etc/bash_completion.d/git-prompt.sh
+source /opt/homebrew/etc/bash_completion.d/git-completion.bash
+source /opt/homebrew/etc/bash_completion.d/git-prompt.sh
 
 # git is aliased to g, need to alias autocompletion
 __git_complete g __git_main
@@ -128,7 +125,7 @@ fi)'$COLOR_OFF'\n'$MONEY_PROMPT
 # PATH
 ################
 
-export PATH=.:/Users/mgoldman/Applications:$PATH
+export PATH=.:/Users/mgoldman/Applications:/Users/mgoldman/.local/bin:$PATH
 export PATH=$PATH:/Library/TeX/texbin
 
 ################
@@ -138,28 +135,11 @@ export PATH=$PATH:/Library/TeX/texbin
 # Ruby stuff
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
-# Racket
-export PATH=$PATH:/Applications/Racket\ v6.0/bin
-
-# Go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
-# nvm
-export NVM_DIR=~/.nvm
-source $NVM_DIR/nvm.sh
-export PATH=$PATH:.node_modules/.vim
-
-# set up Java
-export JAVA_HOME=$(/usr/libexec/java_home)
-
-# Python
-# source /usr/local/bin/virtualenvwrapper.sh
-
 ################
 # MISC
 ################
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_ANALYTICS=1
 
 #todo.txt stuff
@@ -171,9 +151,11 @@ export TODOTXT_PRESERVE_LINE_NUMBERS=0
 bind '"[A":history-search-backward'
 bind '"[B":history-search-forward'
 
-ssh-add -A
+ssh-add --apple-load-keychain
 
 eval $(thefuck --alias) 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+export GPG_TTY=$(tty)
 
+. /opt/homebrew/opt/asdf/asdf.sh

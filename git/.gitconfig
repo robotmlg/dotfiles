@@ -1,12 +1,21 @@
 [user]
 	name = Matt Goldman
-	email = robotmlg@gmail.com
+	email = matt@carsandbids.com
+	signingkey = 0C26557CC8022645
 [credential]
 	helper = osxkeychain
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
+    pager = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less -S
 [push]
 	default = simple
 [color]
-	ui = true
+	ui = always
+[commit]
+	gpgsign = true
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
