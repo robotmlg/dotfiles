@@ -1,8 +1,8 @@
 export HISTSIZE=
 export HISTFILESIZE=
-# avoid duplicates..
+# avoid duplicates
 export HISTCONTROL=ignoredups:erasedups  
-# append history entries..
+# append history entries
 shopt -s histappend
 
 # After each command, save and reload history
@@ -12,3 +12,7 @@ export EDITOR='vim'
 source ~/dotfiles/tmuxinator.bash
 
 complete -C /opt/homebrew/bin/terraform terraform
+
+. "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+
+. "/opt/homebrew/opt/asdf/etc/bash_completion.d/asdf.bash"

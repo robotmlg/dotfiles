@@ -10,12 +10,36 @@
     pager = /opt/homebrew/share/git-core/contrib/diff-highlight/diff-highlight | less -S
 [push]
 	default = simple
+	autoSetupRemote = true
 [color]
 	ui = always
 [commit]
 	gpgsign = true
+	verbose = true
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
   newNormal = green bold
   newHighlight = green bold 22
+[merge]
+	conflictStyle = zdiff3
+[rerere]
+	enabled = true
+[diff]
+	algorithm = histogram
+	submodule = log
+	colorMoved = default
+[transfer]
+	fsckobject = true
+[fetch]
+	fsckobjects = true
+	prune = true
+	prunetags = true
+[receive]
+	fsckObjects = true
+[status]
+	submoduleSummary = true
+[submodule]
+	recurse = true
+[branch]
+	sort = -committerdate

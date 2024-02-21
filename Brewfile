@@ -38,6 +38,7 @@ cask "iterm2"
 cask "karabiner-elements"
 cask "mactex"
 cask "slack-beta"
+cask "syntax-highlight"
 cask "the-unarchiver"
 
 # personal
