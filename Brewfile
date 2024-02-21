@@ -7,7 +7,7 @@ mas "bookmarker for pinboard", id:1451400394
 mas "broadcasts", id:1469995354
 mas "dark-mode-for-safari", id:1397180934
 mas "deliveries", id:290986013
-mas "Downlink", id:1454269192
+# mas "Downlink", id:1454269192
 mas "drafts", id:1435957248
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -43,7 +43,6 @@ cask "the-unarchiver"
 
 # personal
 cask "netnewswire"
-cast "twitterific"
 
 # video
 cask "handbrake"
