@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export GPG_TTY=$(tty)
+
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Created by `pipx` on 2023-06-11 19:49:13
