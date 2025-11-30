@@ -3,33 +3,24 @@ tap "teamookla/speedtest"
 
 brew "mas"
 
-mas "bookmarker for pinboard", id:1451400394
 mas "broadcasts", id:1469995354
-mas "dark-mode-for-safari", id:1397180934
-mas "deliveries", id:290986013
 # mas "Downlink", id:1454269192
 mas "drafts", id:1435957248
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "pcalc", id:403504866
-mas "StopTheMadness", id:1376402589
-mas "Soulver 2", id:413965349
 mas "TestFlight", id:899247664
 mas "Vinegar - Tube Cleaner", id:1591303229
 mas "Baking Soda - Tube Cleaner", id:1601151613
-mas "wipr", id:1320666476
 
 # core
 cask "1password"
 cask "aerial"
 cask "apptrap"
-cask "bartender"
 cask "bbedit"
 cask "bettertouchtool"
 cask "coconutbattery"
 cask "dash" 
-cask "homebrew/cask-versions/discord-canary"
-cask "docker" 
 cask "fantastical"
 cask "firefox"
 cask "grandperspective"
@@ -37,7 +28,6 @@ cask "istat-menus"
 cask "iterm2"
 cask "karabiner-elements"
 cask "mactex"
-cask "slack-beta"
 cask "syntax-highlight"
 cask "the-unarchiver"
 
@@ -79,4 +69,4 @@ brew "wget"
 brew "yt-dlp"
 
 # do xcode last because it takes forever
-mas "xcode", id:497799835
+# mas "xcode", id:497799835

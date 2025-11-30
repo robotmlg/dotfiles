@@ -1,7 +1,7 @@
 [user]
 	name = Matt Goldman
 	email = matt@carsandbids.com
-	signingkey = 0C26557CC8022645
+	signingkey = 06F4EA84DC6167BC
 [credential]
 	helper = osxkeychain
 [core]
